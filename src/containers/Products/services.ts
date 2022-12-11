@@ -15,7 +15,6 @@ export const getProductsService = (page: number, per_page: number, category: str
     url = url + `limit=${per_page}&skip=${(page-1) * per_page}`;
   }
   return authInstance.get(`${url}`)
-  // return authInstance.get(`/products${search ? `/search?q=${search}` : `${category ? `/category/${category}` : ''}`}?limit=${per_page}&skip=${(page-1) * per_page}`);
 }
 
 export const getProductService = (id: any) => {

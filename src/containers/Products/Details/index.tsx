@@ -104,7 +104,6 @@ const ProductDetails: FC = () => {
                         </ProductPrice>
                         <P>{product.description}</P>
                         <Button className={product.stock ? '' : 'disabled'} disabled={product.stock ? false : true} onClick={addProductToCart}>Add to cart</Button>
-                        {/* <Button onClick={addProductToCart}>Add to cart</Button> */}
                     </Col6>
                 </Row>
                 }
@@ -118,6 +117,7 @@ const ProductDetailsWrapper = styled.div`
     margin-top: 20px;
     position: relative;
     min-height: 600px;
+    padding: 20px;
 `;
 
 const ProductPrice = styled.div`
