@@ -2,7 +2,7 @@
  * Products
 */
 
-import React, { FC, useCallback, useEffect, useState } from 'react';
+import React, { FC, useCallback, useEffect } from 'react';
 import reducer from '../reducer';
 import saga from '../saga';
 import { useInjectReducer } from '../../../utils/injectReducer';
