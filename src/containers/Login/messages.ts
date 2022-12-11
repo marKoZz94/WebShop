@@ -1,6 +1,6 @@
 import { defineMessages } from 'react-intl';
 
-export const scope = 'dbnip.containers.Login';
+export const scope = 'study.containers.Login';
 
 export default defineMessages({
   Header: {

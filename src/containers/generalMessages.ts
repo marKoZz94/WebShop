@@ -1,6 +1,6 @@
 import { defineMessages } from 'react-intl';
 
-export const scope = 'dbnip.containers';
+export const scope = 'study.containers';
 
 export default defineMessages({
 

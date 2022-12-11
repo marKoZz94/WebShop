@@ -1,4 +1,4 @@
-const scope = 'dbnip/Notifications';
+const scope = 'study/Notifications';
 
 export const NOTIFICATION_INIT = `${scope}/NOTIFICATION_INIT`;
 export const NOTIFICATIONS_ERROR = `${scope}/NOTIFICATIONS_ERROR`;
