@@ -1,0 +1,55 @@
+export const converFromSrbToEng  = ({
+    naziv,
+    vrsta_potrosaca,
+    vrsta_konekcije,
+    jedinstveni_broj,
+    broj_ugovora,
+    adresa,
+    mesto,
+    email,
+    broj_prikljucka,
+    tip,
+    katastarska_opstina,
+    katastarska_parcela,
+    broj_u_evidenciji,
+    materijal,
+    dimenzije,
+    pritisak
+    }: {
+        naziv: string | null,
+        vrsta_potrosaca: string | null,
+        vrsta_konekcije: string | null,
+        jedinstveni_broj: string | null,
+        broj_ugovora: string | null,
+        adresa: string | null,
+        mesto: string | null,
+        email: string | null,
+        broj_prikljucka:  string | null,
+        tip:  string | null,
+        katastarska_opstina:  string | null,
+        katastarska_parcela:  string | null,
+        broj_u_evidenciji:  string | null,
+        materijal:  string | null,
+        dimenzije:  string | null,
+        pritisak:  string | null
+    }) => (
+    {
+        name : naziv ? naziv :  null,
+        type_consumer: vrsta_potrosaca ? vrsta_potrosaca : null,
+        connection_type: vrsta_konekcije ? vrsta_konekcije : null,
+        unique_number : jedinstveni_broj ? jedinstveni_broj: null,
+        contract_number : broj_ugovora ? broj_ugovora : null,
+        address : adresa ? adresa : null,
+        place : mesto ? mesto : null,
+        email: email ? email : null,
+        connection_number:  broj_prikljucka ? broj_prikljucka : null,
+        type_object:  tip ? tip : null,
+        cadastral_municipality: katastarska_opstina ? katastarska_opstina : null,
+        cadastral_parcels: katastarska_parcela ? katastarska_parcela : null,
+        records_in_os: broj_u_evidenciji ? broj_u_evidenciji : null,
+        materials: materijal ? materijal : null,
+        dimensions: dimenzije ? dimenzije : null,
+        pressure: pritisak ? pritisak : null
+    }
+
+)
