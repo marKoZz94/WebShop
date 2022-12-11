@@ -49,9 +49,9 @@ const Header: FC<Props> = ({logout, isAuth}) => {
     <>
     <HeaderWrapper>
       <HeaderContainer>
-        <div>
+        <Name>
           <Link to={routes.homepage}>Web Shop</Link>
-        </div>
+        </Name>
         <Actions>
           {isAuth ? 
             <span>
@@ -92,6 +92,12 @@ const HeaderContainer = styled(Container)`
   justify-content: space-between;
   align-items: center;
 `;
+
+const Name = styled.div`
+  a {
+    font-size: 38px;
+  }
+`
 
 const Actions = styled.div`
   display: flex;

@@ -33,6 +33,6 @@ export const postAddToCartService = (data: any) => {
       data
     ]
   }
-  return authInstance.put(`/carts/${data.id}`, requestData).then((res: any) => {console.log('res', res)});
+  return authInstance.put(`/carts/${data.id}`, requestData);
 }
   

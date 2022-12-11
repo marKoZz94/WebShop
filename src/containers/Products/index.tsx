@@ -76,7 +76,7 @@ const Products: FC = () => {
                     </Filters>
                 </Col3>
                 <Col9>
-                    <Row>
+                    <ProductRow>
                         {loading ? <LoadOverlayFadingCircle /> :
                             products && products.length > 0 ? 
                                 products.map((product: any, i: number) => {
@@ -87,7 +87,7 @@ const Products: FC = () => {
                                     )
                                 }) 
                         : null}
-                    </Row>
+                    </ProductRow>
                     {products && pageCount > 1 ?
                         <Pagination>
                             <ReactPaginate
@@ -115,6 +115,12 @@ const ProductsWrapper = styled.div`
     padding: 20px;
 `;
 
+const ProductRow = styled(Row)`
+    @media (max-width: 768px) {
+        display: flex;
+      justify-content: center;
+    }
+`;
 const Col3Card = styled(Col3)`
     display: flex;
 `

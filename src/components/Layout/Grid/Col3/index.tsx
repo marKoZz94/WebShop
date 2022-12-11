@@ -6,6 +6,10 @@ const Col3 = styles.div`
     position: relative;
     width: 100%;
     padding: 0 15px;
+    @media (max-width: 992px) {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
     @media (max-width: 768px) {
         flex: 0 0 100%;
         max-width: 100%;

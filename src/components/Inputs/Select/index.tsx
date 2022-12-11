@@ -55,13 +55,18 @@ const SelectWrapper = styled.select`
   margin-bottom: 10px;
   background: ${colors.WHITE_COLOR};
   color: ${colors.BLACK_COLOR};
-  border: 1px solid ${colors.BLACK_COLOR};
+  border: none;
   border-radius: 10px;
   transition: all 200ms ease-in-out;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   font-family: 'Monsterrat';
+  &:focus {
+      outline: 1px solid ${colors.SECONDARY_COLOR};
+      transition: all 200ms ease-in-out;
+      box-shadow: 0px 6px 9px #00000029;
+    }
 `;
 
 export default Select;
