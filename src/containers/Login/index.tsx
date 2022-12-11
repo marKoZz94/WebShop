@@ -108,7 +108,7 @@ const LoginPage: FC = () => {
         </form>
       : 
       <>
-        <Link to={generatePath(routes.homepage)} className="link">Vratite se na pretragu</Link>
+        <Link to={generatePath(routes.homepage)} className="link">Back to homepage</Link>
       </>}
     </LoginWrapper>
   );
